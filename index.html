@@ -5,14 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>iloveyoutube</title>
 <style>
-  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 640px; margin: 48px auto; padding: 0 16px; line-height: 1.6; color: #1a1a1a; background: #fff; }
-  a { color: #0b57d0; }
+  :root { --text: #1f1f1f; --muted: #5f6368; --line: #e3e3e3; --link: #0b57d0; --bg: #ffffff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.65; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 32px; }
+  .brand { font-weight: 600; color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 24px; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 4px 0; }
+  a { color: var(--link); }
+  footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 16px; font-size: 0.9rem; color: var(--muted); }
+  footer a { margin-right: 16px; }
 </style>
 </head>
 <body>
+<main>
+<header><a class="brand" href="index.html">iloveyoutube</a></header>
 <h1>iloveyoutube</h1>
-<p>iloveyoutube is a personal organizer for the owner's own YouTube channels. It puts the owner's videos, playlists, schedule, statistics and comments in one place so the channels are easier to manage.</p>
-<p>Nothing happens on its own: the owner chooses and approves every upload, edit and reply. It is used only by its owner and has no other users.</p>
-<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p>
+<p class="meta">A personal organizer for YouTube channels</p>
+<p>iloveyoutube (the "App") is a personal tool that brings a creator's own YouTube channels together in one place. It keeps videos, playlists, publishing schedules, channel statistics and comments organized so the channels are easier to manage.</p>
+<h2>How it works</h2>
+<ul>
+<li>The owner signs in each of their own channels with Google.</li>
+<li>Videos, playlists, statistics and comments are shown in one organized view.</li>
+<li>Every upload, edit and reply is chosen and approved by the owner. Nothing is posted on its own.</li>
+</ul>
+<h2>Who it is for</h2>
+<p>The App is used only by its owner to manage the owner's own channels. It is not offered to the public.</p>
+<footer><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></footer>
+</main>
 </body>
 </html>
